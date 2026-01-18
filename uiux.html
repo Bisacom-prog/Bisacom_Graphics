@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GospelQuote Case Study | Bismark Apenkwah</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',
+            accent: '#F59E0B',
+            darkbg: '#0f172a'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style> body { font-family:'Poppins',sans-serif; transition: background 0.4s ease; } </style>
+</head>
+
+<body class="bg-slate-50 dark:bg-darkbg text-slate-900 dark:text-slate-100">
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+  <!-- Back + Dark mode toggle -->
+  <div class="flex items-center justify-between mb-6">
+    <a href="index.html#projects" class="text-sm text-slate-500 hover:text-primary dark:hover:text-accent">← Back to Projects</a>
+
+    <button onclick="toggleDarkMode()" 
+      class="px-4 py-2 text-sm bg-slate-200 dark:bg-slate-800 rounded-full hover:bg-slate-300 dark:hover:bg-slate-700 transition">
+      Toggle Dark Mode
+    </button>
+  </div>
+
+
+  <!-- HERO -->
+  <section class="grid md:grid-cols-2 gap-8 items-center mb-16">
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">GospelQuote — Christian Inspiration Blog</h1>
+      <p class="text-xs uppercase tracking-wide text-slate-500 mb-4">UI/UX Design · Front-End Development</p>
+
+      <p class="text-sm leading-relaxed text-slate-700 dark:text-slate-200 mb-6">
+        A modern devotional platform bringing write-ups, podcasts and scripture doodles
+        into one calm, spiritually refreshing reading experience with full Light & Dark mode support.
+      </p>
+
+      <div class="flex gap-3 flex-wrap">
+        <a href="https://gospelquote-next-sanity.vercel.app/" class="px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:bg-blue-800 transition">
+          View Live Website
+        </a>
+        <a href="https://www.figma.com/design/M8HbNFFQCZ1FrbSMTEykHT/GospelQuote?node-id=0-1&m=dev&t=yEl9dU53xeLz3Eeo-1" 
+           class="px-4 py-2 rounded-full border border-primary text-primary text-sm font-semibold hover:bg-primary hover:text-white transition">
+          View in Figma
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden">
+      <img src="assets/img/gq_wbg.webp" class="w-full object-cover" />
+    </div>
+  </section>
+
+
+  <!-- ROLE & TOOLS -->
+  <section class="grid md:grid-cols-3 gap-6 mb-16">
+    <div>
+      <h2 class="text-xs font-semibold tracking-wide text-slate-500 mb-2">ROLE</h2>
+      <p class="text-sm">UI/UX Designer<br>Front-End Developer</p>
+    </div>
+
+    <div>
+      <h2 class="text-xs font-semibold tracking-wide text-slate-500 mb-2">TOOLS</h2>
+      <p class="text-sm">Figma, Tailwind CSS, HTML</p>
+    </div>
+
+    <div>
+      <h2 class="text-xs font-semibold tracking-wide text-slate-500 mb-2">DELIVERABLES</h2>
+      <p class="text-sm">Responsive UI · Light & Dark Mode · Content Architecture</p>
+    </div>
+  </section>
+
+
+  <!-- PROBLEM + GOALS -->
+  <section class="grid md:grid-cols-2 gap-10 mb-20">
+    <div>
+      <h2 class="text-xl font-semibold mb-3">The Challenge</h2>
+      <p class="text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
+        Christian content exists everywhere but lacks central organization.
+        GospelQuote needed a structured platform to host devotionals, audio messages and scripture visuals without clutter.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-3">Goals</h2>
+      <ul class="text-sm space-y-2 list-disc list-inside text-slate-700 dark:text-slate-200">
+        <li>Create a calm and modern reading environment.</li>
+        <li>Improve content discovery & browsing experience.</li>
+        <li>Support Light & Dark themes for comfort and accessibility.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- LIGHT vs DARK UI -->
+  <section class="mb-20">
+    <h2 class="text-xl font-semibold mb-4">Light & Dark Mode Experience</h2>
+    <p class="text-sm text-slate-700 dark:text-slate-200 mb-6">Comfortable day reading & calm night devotion experience.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+        <img src="assets/img/gq_wbg.webp" class="w-full object-cover"/>
+        <p class="p-3 text-xs text-slate-500 dark:text-slate-400">Light Mode UI</p>
+      </div>
+
+      <div class="rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+        <img src="assets/img/gq_darkmode.webp" class="w-full object-cover"/>
+        <p class="p-3 text-xs text-slate-500 dark:text-slate-400">Dark Mode UI</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FEATURE SECTIONS -->
+  <section class="mb-20">
+    <h2 class="text-xl font-semibold mb-4">Key Content Screens</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <article class="bg-white dark:bg-slate-900 rounded-2xl shadow overflow-hidden">
+        <img src="assets/img/gq_writeups.webp" class="w-full object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-sm mb-1">Write-ups</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-300">Devotionals arranged for quick reflection.</p>
+        </div>
+      </article>
+
+      <article class="bg-white dark:bg-slate-900 rounded-2xl shadow overflow-hidden">
+        <img src="assets/img/gq_podcast.webp" class="w-full object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-sm mb-1">Podcasts</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-300">Audio for sermons & discussions.</p>
+        </div>
+      </article>
+
+      <article class="bg-white dark:bg-slate-900 rounded-2xl shadow overflow-hidden">
+        <img src="assets/img/gq_doodle.webp" class="w-full object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-sm mb-1">Doodles</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-300">Scripture visuals made shareable.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="mb-20">
+    <h2 class="text-xl font-semibold mb-4">Encouraging Connection</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <p class="text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
+        The contact page encourages visitors to reach out easily — prayer requests,
+        spiritual questions or collaboration.
+      </p>
+
+      <div class="rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+        <img src="assets/img/gq_contact.webp" class="w-full object-cover">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- OUTCOME -->
+  <section class="mb-20">
+    <h2 class="text-xl font-semibold mb-3">Outcome</h2>
+    <ul class="text-sm list-disc list-inside space-y-1 text-slate-700 dark:text-slate-200">
+      <li>Unified Christian inspiration platform.</li>
+      <li>Improved content structure & readability.</li>
+      <li>Light/Dark comfort increases usage time.</li>
+    </ul>
+  </section>
+
+<!-- FINAL CTA -->
+<section class="border-t border-slate-200 dark:border-slate-800 pt-10 pb-16">
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+    <div>
+      <h3 class="font-semibold text-xl mb-1">Explore the Full Project</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300">
+        Access the design file or view the live platform experience.
+      </p>
+    </div>
+
+    <div class="flex gap-3">
+      <!-- Primary Button -->
+      <a href="https://www.figma.com/design/M8HbNFFQCZ1FrbSMTEykHT/GospelQuote" target="_blank"
+        class="px-6 py-2.5 rounded-full bg-primary text-white text-sm font-semibold 
+               hover:bg-blue-800 hover:scale-[1.02] active:scale-95 transition shadow-sm">
+        View in Figma
+      </a>
+
+      <!-- Secondary Button -->
+      <a href="https://gospelquote-next-sanity.vercel.app/" target="_blank"
+        class="px-6 py-2.5 rounded-full border border-primary text-primary text-sm font-semibold 
+               hover:bg-primary hover:text-white hover:scale-[1.02] active:scale-95 transition shadow-sm">
+        Live Website
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+
+<!-- DARK MODE SCRIPT -->
+<script>
+  const html = document.documentElement;
+
+  if(localStorage.theme === "dark"){ html.classList.add("dark"); }
+
+  function toggleDarkMode(){
+    html.classList.toggle("dark");
+    localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
+  }
+</script>
+
+</body>
+</html>

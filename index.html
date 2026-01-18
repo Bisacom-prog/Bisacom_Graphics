@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bismark Apenkwah | Product Designer (UI/UX & Front-End)</title>
+
+  <!-- SEO & Meta Enhancements -->
+  <meta name="description" content="Bismark Apenkwah — Front-End and Graphic Designer crafting modern websites, UX/UI designs, and brand visuals.">
+  <meta name="keywords" content="Front-End Designer, Graphic Designer, Portfolio, Web Developer, UI UX, Tailwind CSS">
+  <meta name="author" content="Bismark Apenkwah">
+  <meta name="theme-color" content="#1E3A8A">
+
+  <!-- Canonical (update href after deploying) -->
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Bismark Apenkwah | Front-End & Graphic Designer">
+  <meta property="og:description" content="Portfolio of a modern Front-End and Graphic Designer based in Norwich, UK — crafting clean interfaces and visual brands.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:image" content="https://yourdomain.com/assets/img/Bisacom_logo.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bismark Apenkwah | Front-End & Graphic Designer">
+  <meta name="twitter:description" content="Modern front-end & graphic design portfolio with UX/UI work, brand identities and web projects.">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/img/Bisacom_logo.webp">
+
+  <link rel="icon" type="image/png" href="assets/img/bisacom_graphic.webp">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',
+            accent: '#F59E0B',
+            darkbg: '#0f172a'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white dark:bg-darkbg text-gray-800 dark:text-gray-200 transition-colors duration-500">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-sm z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/img/bisacom_graphic.webp" alt="Bisacom logo" class="brand-logo w-10 h-10 rounded-full" loading="lazy">
+        <h1 class="text-2xl font-bold text-primary dark:text-accent">Bismark Apenkwah</h1>
+      </div>
+
+      <nav class="hidden md:flex space-x-6 font-medium" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#blog" class="nav-link">My Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" aria-label="Toggle theme" class="p-2 rounded-full bg-gray-100 dark:bg-gray-700">
+          <i id="themeIcon" class="fa-solid fa-moon text-gray-800 dark:text-yellow-300"></i>
+        </button>
+        <button id="menuBtn" aria-label="Open menu" class="md:hidden text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="hidden md:hidden bg-white dark:bg-gray-900 flex flex-col space-y-4 py-4 px-6 border-t border-gray-200 dark:border-gray-800">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#blog" class="nav-link">My Blog</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero-section min-h-screen flex items-center px-6 pt-28">
+    <!-- Ambient orbs -->
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+
+    <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-center relative z-10">
+      <!-- Text side -->
+      <div class="space-y-6 text-center md:text-left fade-in">
+        <span class="inline-flex items-center gap-2 text-xs md:text-sm px-3 py-1 rounded-full bg-primary/10 text-primary dark:bg-accent/10 dark:text-accent border border-primary/10 dark:border-accent/20">
+          <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+          Available for freelance &amp; collaborations
+        </span>
+
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Hi, I'm <span class="text-primary dark:text-accent">Bismark</span>
+        </h1>
+
+        <p class="text-base md:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto md:mx-0">
+          A passionate <strong>Product Designer</strong> <strong>(UI/UX & Front-End)</strong> crafting elegant digital experiences and visual stories.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+          <a href="#projects"
+             class="magnet bg-primary text-white px-7 py-3 rounded-full font-semibold hover:bg-accent transition shadow-md inline-flex items-center justify-center gap-2"
+             aria-label="View my work">
+            View My Work
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </a>
+          <a href="#contact"
+             class="px-7 py-3 rounded-full border border-gray-300 dark:border-gray-600 text-sm md:text-base text-gray-700 dark:text-gray-200 bg-white/70 dark:bg-gray-900/50 hover:border-accent hover:text-accent transition inline-flex items-center justify-center gap-2"
+             aria-label="Contact me for a project">
+            Let's Collaborate
+            <i class="fa-regular fa-handshake text-sm"></i>
+          </a>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs md:text-sm text-gray-500 dark:text-gray-400 justify-center md:justify-start">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-check-circle text-green-500" aria-hidden="true"></i>
+            <span>Responsive Web Design</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-check-circle text-green-500" aria-hidden="true"></i>
+            <span>Brand &amp; Visual Identity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Glass metrics side -->
+      <div class="hero-glass relative mt-6 md:mt-0 fade-in">
+        <div class="absolute -top-6 -right-4 text-xs uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500">
+          Portfolio • 2025
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Primary Focus</p>
+              <p class="font-semibold text-sm md:text-base text-gray-900 dark:text-gray-100">UI/UX &amp; Front-End</p>
+            </div>
+            <div class="text-right">
+              <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Experience</p>
+              <p class="font-semibold text-sm md:text-base text-gray-900 dark:text-gray-100">5+ years</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 text-center text-xs md:text-sm">
+            <div class="rounded-lg border border-white/50 dark:border-gray-700 bg-white/40 dark:bg-gray-900/40 px-3 py-3">
+              <p class="font-bold text-lg md:text-xl text-primary dark:text-accent">20+</p>
+              <p class="text-gray-600 dark:text-gray-300">Web Projects</p>
+            </div>
+            <div class="rounded-lg border border-white/50 dark:border-gray-700 bg-white/40 dark:bg-gray-900/40 px-3 py-3">
+              <p class="font-bold text-lg md:text-xl text-primary dark:text-accent">30+</p>
+              <p class="text-gray-600 dark:text-gray-300">Brand Assets</p>
+            </div>
+            <div class="rounded-lg border border-white/50 dark:border-gray-700 bg-white/40 dark:bg-gray-900/40 px-3 py-3">
+              <p class="font-bold text-lg md:text-xl text-primary dark:text-accent">UK</p>
+              <p class="text-gray-600 dark:text-gray-300">Based in Norwich</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 text-xs md:text-sm">
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/10 text-primary dark:bg-accent/15 dark:text-accent">
+              <i class="fa-solid fa-bolt text-[0.7rem]" aria-hidden="true"></i> HTML5 / CSS / JavaScript
+            </span>
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gray-900/5 dark:bg-gray-800">
+              <i class="fa-brands fa-figma text-[0.7rem]" aria-hidden="true"></i> Figma / Adobe Creative
+            </span>
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gray-900/5 dark:bg-gray-800">
+              <i class="fa-solid fa-pen-nib text-[0.7rem]" aria-hidden="true"></i> Branding
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-500 dark:text-gray-400 flex flex-col items-center gap-2">
+      <span class="hidden md:inline">Scroll to explore</span>
+      <span class="w-[1px] h-10 bg-gradient-to-b from-transparent via-gray-400/70 to-transparent animate-pulse"></span>
+    </div>
+  </section>
+
+  <!-- About + Skills -->
+  <section id="about" class="pt-10 pb-16 bg-gray-50 dark:bg-gray-800 px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <img src="assets/img/Kwaning.webp" alt="Portrait of Bismark Apenkwah" class="rounded-lg shadow-lg fade-in w-64 md:w-72 mx-auto" loading="lazy">
+      <div class="fade-in">
+        <h2 class="section-title text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
+          I’m a creative designer who blends code and artistry. I design responsive, user-centered websites and brand visuals that tell a story — combining UX/UI principles with strong brand identity.
+        </p>
+        <a href="assets/docs/cv.pdf" class="inline-block bg-accent text-white px-6 py-3 rounded-md hover:bg-primary transition" target="_blank" rel="noopener noreferrer">
+          View Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- My Skills Section -->
+    <div class="max-w-6xl mx-auto mt-16 text-center fade-in">
+      <h2 class="section-title text-3xl font-bold mb-6">My Skills</h2>
+      <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10">
+        A combination of creativity and technical precision — I specialize in designing clean user interfaces, responsive layouts, and captivating visuals that bring ideas to life.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Front-End Design -->
+        <div class="flip-card fade-in">
+          <div class="flip-inner card bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+            <div class="flip-front">
+              <div class="text-4xl text-accent mb-4"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+              <h3 class="text-xl font-semibold mb-2">Front-End Design</h3>
+              <p class="text-gray-600 dark:text-gray-300">Hover to view my core tools and stack.</p>
+            </div>
+            <div class="flip-back bg-primary dark:bg-accent text-white flex flex-col justify-center items-center">
+              <h3 class="text-lg font-semibold mb-3">Technologies</h3>
+              <div class="flex flex-wrap justify-center gap-2 text-sm">
+                <span class="bg-white/20 px-3 py-1 rounded">HTML5</span>
+                <span class="bg-white/20 px-3 py-1 rounded">CSS3</span>
+                <span class="bg-white/20 px-3 py-1 rounded">Tailwind</span>
+                <span class="bg-white/20 px-3 py-1 rounded">JavaScript</span>
+                <span class="bg-white/20 px-3 py-1 rounded">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="flip-card fade-in">
+          <div class="flip-inner card bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+            <div class="flip-front">
+              <div class="text-4xl text-accent mb-4"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
+              <h3 class="text-xl font-semibold mb-2">Graphic Design</h3>
+              <p class="text-gray-600 dark:text-gray-300">Hover to see my favorite design tools.</p>
+            </div>
+            <div class="flip-back bg-primary dark:bg-accent text-white flex flex-col justify-center items-center">
+              <h3 class="text-lg font-semibold mb-3">Design Tools</h3>
+              <div class="flex flex-wrap justify-center gap-2 text-sm">
+                <span class="bg-white/20 px-3 py-1 rounded">Photoshop</span>
+                <span class="bg-white/20 px-3 py-1 rounded">Illustrator</span>
+                <span class="bg-white/20 px-3 py-1 rounded">Figma</span>
+                <span class="bg-white/20 px-3 py-1 rounded">Canva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Storytelling -->
+        <div class="flip-card fade-in">
+          <div class="flip-inner card bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+            <div class="flip-front">
+              <div class="text-4xl text-accent mb-4"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+              <h3 class="text-xl font-semibold mb-2">Visual Storytelling</h3>
+              <p class="text-gray-600 dark:text-gray-300">Hover to see what shapes my creative direction.</p>
+            </div>
+            <div class="flip-back bg-primary dark:bg-accent text-white flex flex-col justify-center items-center">
+              <h3 class="text-lg font-semibold mb-3">Creative Focus</h3>
+              <div class="flex flex-wrap justify-center gap-2 text-sm">
+                <span class="bg-white/20 px-3 py-1 rounded">Color Theory</span>
+                <span class="bg-white/20 px-3 py-1 rounded">Typography</span>
+                <span class="bg-white/20 px-3 py-1 rounded">UI/UX Principles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6 bg-white dark:bg-darkbg mt-10">
+    <div class="max-w-7xl mx-auto text-center mb-12 fade-in">
+      <h2 class="section-title text-3xl md:text-4xl font-bold">Featured Projects</h2>
+      <p class="text-gray-500 dark:text-gray-300 mt-3">A selection of design and front-end projects I’m proud of.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div class="card project-card bg-gray-100 dark:bg-gray-800 p-6 rounded-lg fade-in">
+        <img src="assets/img/Abas_Pie.webp" alt="UX/UI Design case studies" class="rounded-md mb-4" loading="lazy">
+        <h3 class="text-xl font-semibold mb-2">Branding</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Logos, palettes, and visual systems that express your brand's personality.</p>
+        <a href="https://branding-page-five.vercel.app/" class="text-primary dark:text-accent font-semibold hover:underline" target="_blank" rel="noopener noreferrer">
+          View Projects →
+        </a>
+      </div>
+
+      <div class="card project-card bg-gray-100 dark:bg-gray-800 p-6 rounded-lg fade-in">
+        <img src="assets/img/uxui.webp" alt="Landing page design" class="rounded-md mb-4" loading="lazy">
+        <h3 class="text-xl font-semibold mb-2">UI/UX Designs</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Beautiful, intuitive interfaces that keeps users engaged.</p>
+        <a href="uiux.html" class="text-primary dark:text-accent font-semibold hover:underline">
+          View Project →
+        </a>
+      </div>
+
+      <div class="card project-card bg-gray-100 dark:bg-gray-800 p-6 rounded-lg fade-in">
+        <img src="assets/img/Frontend.webp" alt="Logo design collection" class="rounded-md mb-4" loading="lazy">
+        <h3 class="text-xl font-semibold mb-2">Front End Development</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Clean, semantic code using HTML, CSS, Tailwind and JS.</p>
+        <a href="https://frontend-designs-ten.vercel.app/" class="text-primary dark:text-accent font-semibold hover:underline" target="_blank" rel="noopener noreferrer">
+          View Projects →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="py-20 bg-gray-50 dark:bg-gray-800 px-6">
+    <div class="max-w-6xl mx-auto text-center mb-12 fade-in">
+      <h2 class="section-title text-3xl md:text-4xl font-bold">My Blog</h2>
+      <p class="text-gray-500 dark:text-gray-300 mt-3">Thoughts on design, code, and creativity.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <article class="card bg-white dark:bg-gray-900 p-6 rounded-lg fade-in">
+        <h3 class="text-xl font-semibold mb-2">Designing with Purpose</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">How to align aesthetics with user goals in modern design.</p>
+        <a href="design_purpose.html" class="text-accent hover:underline font-medium">
+          Read More →
+        </a>
+      </article>
+      <article class="card bg-white dark:bg-gray-900 p-6 rounded-lg fade-in">
+        <h3 class="text-xl font-semibold mb-2">From Figma to Frontend</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Turning UI mockups into functional responsive pages.</p>
+        <a href="figma.html" class="text-accent hover:underline font-medium">
+          Read More →
+        </a>
+      </article>
+      <article class="card bg-white dark:bg-gray-900 p-6 rounded-lg fade-in">
+        <h3 class="text-xl font-semibold mb-2">Color Theory in Branding</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Choosing color palettes that shape brand perception.</p>
+        <a href="color.html" class="text-accent hover:underline font-medium">
+          Read More →
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-white dark:bg-darkbg transition-colors duration-500">
+    <div class="max-w-5xl mx-auto text-center mb-12 fade-in">
+      <h2 class="section-title text-3xl md:text-4xl font-bold">Get in Touch</h2>
+      <p class="text-gray-500 dark:text-gray-300 mt-3">Let’s collaborate or discuss your next project.</p>
+    </div>
+
+    <!-- Activated Contact Form -->
+    <form
+      id="contactForm"
+      action="https://formspree.io/f/xldnqpbp"
+      method="POST"
+      class="max-w-3xl mx-auto bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-md"
+    >
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <input type="text" name="name" placeholder="Your Name" required
+          class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary transition"
+          aria-label="Your name" />
+        <input type="email" name="email" placeholder="Your Email" required
+          class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary transition"
+          aria-label="Your email" />
+      </div>
+
+      <textarea name="message" rows="5" placeholder="Your Message" required
+        class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary mb-6 transition"
+        aria-label="Your message"></textarea>
+
+      <button type="submit"
+              class="bg-primary text-white px-6 py-3 rounded-md hover:bg-accent transition duration-300 w-full md:w-auto font-semibold"
+              aria-label="Send message">
+        Send Message
+      </button>
+    </form>
+
+    <!-- Success and Error Popups -->
+    <div id="formAlert" class="hidden fixed bottom-6 right-6 px-6 py-4 rounded-lg text-white text-sm font-semibold shadow-lg z-50"></div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="py-20 bg-gray-50 dark:bg-gray-800 text-center px-6 fade-in">
+    <h2 class="section-title text-3xl md:text-4xl font-bold mb-6">My Resume</h2>
+    <p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-300 mb-8">
+      Download my detailed CV to learn more about my experience, projects, and skills.
+    </p>
+    <a href="assets/docs/cv.pdf" download class="bg-accent text-white px-8 py-3 rounded-md hover:bg-primary transition" target="_blank" rel="noopener noreferrer">
+      Download Resume
+    </a>
+  </section>
+
+  <!-- Social Media -->
+  <section id="socials" class="py-12 bg-white dark:bg-darkbg text-center px-6">
+    <h2 class="section-title text-2xl md:text-3xl font-bold mb-6">Connect with Me</h2>
+
+    <div class="flex flex-wrap justify-center gap-3 text-lg" id="magnetic-container">
+      <a href="https://www.linkedin.com/in/bismarkapenkwah" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+        class="magnet social-icon micro-bounce glow-hover spin-slow bg-gray-100 dark:bg-gray-800 p-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-accent transition">
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+
+       <a href="https://github.com/Bisacom-prog" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+        class="magnet social-icon micro-bounce glow-hover spin-slow bg-gray-100 dark:bg-gray-800 p-2 rounded-full hover:bg-gray-900 hover:text-white transition">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.instagram.com/bisacom_graphics?" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+        class="magnet social-icon micro-bounce glow-hover spin-slow bg-gray-100 dark:bg-gray-800 p-2 rounded-full hover:bg-pink-500 hover:text-white transition">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.tiktok.com/@bisacom" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
+        class="magnet social-icon micro-bounce glow-hover spin-slow bg-gray-100 dark:bg-gray-800 p-2 rounded-full hover:bg-black hover:text-white transition">
+        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer with legal links + Manage Cookies -->
+  <footer class="py-8 bg-gray-100 dark:bg-gray-900 text-gray-500 dark:text-gray-400">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs md:text-sm">
+      <p>© 2026 Bismark Apenkwah. All rights reserved.</p>
+      <div class="flex flex-wrap items-center gap-4">
+        <button type="button" data-open-privacy class="hover:text-accent underline-offset-2 hover:underline">
+          Privacy &amp; Cookie Policy
+        </button>
+        <button type="button" data-open-terms class="hover:text-accent underline-offset-2 hover:underline">
+          Terms of Use
+        </button>
+        <button type="button" data-manage-cookies class="px-3 py-1 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-800">
+          Manage Cookies
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top" class="fixed bottom-6 right-6 bg-primary dark:bg-accent text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="fixed inset-x-4 bottom-4 md:inset-x-auto md:right-6 md:max-w-md bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl p-4 md:p-5 text-xs md:text-sm z-50 hidden">
+    <p class="font-semibold text-gray-800 dark:text-gray-100 mb-1">We use cookies</p>
+    <p class="text-gray-600 dark:text-gray-300 mb-3">
+      This site uses essential cookies to make it work and optional cookies to help me understand how it’s used and improve your experience.
+      You can accept all cookies, reject non-essential cookies, or manage your preferences. See the Privacy &amp; Cookie Policy for more details.
+    </p>
+    <div class="flex flex-wrap gap-2 justify-end">
+      <button type="button" id="cookieReject" class="px-3 py-1 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
+        Reject non-essential
+      </button>
+      <button type="button" data-manage-cookies class="px-3 py-1 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
+        Manage cookies
+      </button>
+      <button type="button" id="cookieAccept" class="px-3 py-1 rounded-md bg-primary dark:bg-accent text-white font-semibold hover:opacity-90">
+        Accept all
+      </button>
+    </div>
+  </div>
+
+  <!-- Cookie Preferences Modal -->
+  <div id="cookiePreferencesModal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center px-4">
+    <div class="bg-white dark:bg-gray-900 max-w-lg w-full rounded-xl shadow-xl p-6 relative">
+      <button type="button" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" onclick="closeModal('cookiePreferencesModal')">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <h2 class="text-lg md:text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Cookie Preferences</h2>
+      <p class="text-xs md:text-sm text-gray-600 dark:text-gray-300 mb-4">
+        Choose which types of cookies you want to allow. You can change your preferences at any time by using the “Manage Cookies” option in the footer.
+      </p>
+
+      <div class="space-y-4 text-sm">
+        <div class="flex items-start gap-3">
+          <input type="checkbox" checked disabled class="mt-1">
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-gray-100">Strictly Necessary Cookies</p>
+            <p class="text-gray-600 dark:text-gray-300 text-xs">
+              Required for basic site functionality such as security, network management and accessibility. These cannot be switched off.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <input type="checkbox" id="cookieAnalytics" class="mt-1">
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-gray-100">Analytics Cookies</p>
+            <p class="text-gray-600 dark:text-gray-300 text-xs">
+              Help me understand how visitors use this portfolio (for example, which pages are most visited) so I can improve the content and experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <input type="checkbox" id="cookieMarketing" class="mt-1">
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-gray-100">Marketing / Personalisation Cookies</p>
+            <p class="text-gray-600 dark:text-gray-300 text-xs">
+              Used to personalise content or measure the performance of any embedded third-party content (such as videos or social feeds).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 flex justify-end gap-3 text-xs md:text-sm">
+        <button type="button" class="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800" onclick="closeModal('cookiePreferencesModal')">
+          Cancel
+        </button>
+        <button type="button" id="saveCookiePrefs" class="px-4 py-2 rounded-md bg-primary dark:bg-accent text-white font-semibold hover:opacity-90">
+          Save preferences
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Privacy & Cookie Policy Modal -->
+  <div id="privacyModal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center px-4">
+    <div class="bg-white dark:bg-gray-900 max-w-3xl w-full max-h-[85vh] rounded-xl shadow-xl p-6 overflow-y-auto relative text-sm">
+      <button type="button" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" onclick="closeModal('privacyModal')">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+
+      <h2 class="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Privacy &amp; Cookie Policy</h2>
+      <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Last updated: 21 November 2025</p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">1. Who I am</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        This website is the personal portfolio of <strong>Bismark Apenkwah</strong>, a front-end and graphic designer.
+        The site showcases my work and allows visitors to contact me about potential projects or collaborations.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">2. What information I collect</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-2">
+        I may collect and process the following types of information:
+      </p>
+      <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 mb-3 space-y-1">
+        <li><strong>Contact details</strong> you provide via the contact form, such as your name, email address and message.</li>
+        <li><strong>Technical information</strong> such as your IP address, browser type, device information and approximate location, if analytics tools are enabled.</li>
+        <li><strong>Usage data</strong> about how you interact with the site (pages visited, time on page, clicks) when analytics cookies are allowed.</li>
+      </ul>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">3. How I use your information</h3>
+      <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 mb-3 space-y-1">
+        <li>To respond to your enquiries and messages.</li>
+        <li>To maintain and improve the website, design, and content.</li>
+        <li>To understand interest in my work and services.</li>
+        <li>To comply with any legal or regulatory obligations where applicable.</li>
+      </ul>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">4. How your information is stored</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        Messages sent via the contact form are delivered to my email inbox (via Formspree or a similar service) and are stored there as long as reasonably necessary for our communication and records. 
+        I do not sell your data or share it for marketing purposes with third parties.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">5. Cookies</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        Cookies are small text files placed on your device to help the site function and to collect information about how visitors use it.
+        Some cookies are strictly necessary, while others are optional (for analytics and personalisation).
+      </p>
+
+      <p class="text-gray-700 dark:text-gray-300 mb-2">
+        I group cookies into the following categories:
+      </p>
+      <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 mb-3 space-y-1">
+        <li><strong>Strictly necessary cookies</strong> – required for basic site operation and security. These are always active.</li>
+        <li><strong>Analytics cookies</strong> – help me understand how visitors use the site so I can improve it.</li>
+        <li><strong>Marketing / personalisation cookies</strong> – support any embedded third-party media or future promotional content.</li>
+      </ul>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        Where required by law, analytics and marketing cookies will only be set on your device if you provide consent through the cookie banner or the “Manage Cookies” settings.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">6. Managing cookies</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        You can manage your cookie preferences at any time by clicking “Manage Cookies” in the footer.
+        Most web browsers also allow you to block cookies or delete them via your settings. Please note that rejecting certain cookies may affect the functionality or performance of the website.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">7. Your rights</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        Depending on your location, you may have rights over your personal data, including the right to access, correct, or request deletion of your information.
+        If you have any questions or requests regarding your data, you can contact me using the form on this site.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">8. Contact</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        For privacy or data-related enquiries, please reach out via the contact form on this website and mention “Privacy Request” in your message.
+      </p>
+
+      <p class="text-xs text-gray-500 dark:text-gray-400 mt-4">
+        This policy is intended as a general explanation of how this personal portfolio handles information and cookies. 
+        If you need formally vetted legal wording, please seek independent legal advice.
+      </p>
+    </div>
+  </div>
+
+  <!-- Terms of Use Modal -->
+  <div id="termsModal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center px-4">
+    <div class="bg-white dark:bg-gray-900 max-w-3xl w-full max-h-[85vh] rounded-xl shadow-xl p-6 overflow-y-auto relative text-sm">
+      <button type="button" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" onclick="closeModal('termsModal')">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+
+      <h2 class="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Terms of Use</h2>
+      <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Last updated: 21 November 2025</p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">1. Acceptance of these terms</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        By accessing or using this website, you agree to be bound by these Terms of Use. 
+        If you do not agree, please do not use the site.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">2. Purpose of the site</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        This website is a personal portfolio designed to showcase my design and development work and to make it easy for people to contact me.
+        The content is for general information only and does not constitute professional advice.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">3. Intellectual property</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        Unless otherwise stated, all images, logos, text, layouts and other content on this site are owned by or licensed to
+        <strong>Bismark Apenkwah</strong>. You may view and share links to the site, but you must not copy, reproduce, modify or redistribute
+        any content for commercial purposes without my prior written permission.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">4. Third-party links and content</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        The site may include links to third-party websites, services or resources. I am not responsible for the content, security or practices of those third-party sites,
+        and visiting them is at your own risk. You should review their own terms and policies where applicable.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">5. No guarantee of availability</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        I aim to keep the site online and up-to-date, but I cannot guarantee that it will always be available, error-free or secure.
+        Access may be suspended or withdrawn temporarily or permanently without prior notice.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">6. Limitation of liability</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        To the fullest extent permitted by law, I will not be liable for any loss or damage (including loss of data, loss of business, or indirect or consequential loss)
+        arising from your use of, or inability to use, this website.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">7. Acceptable use</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        You agree not to misuse this site, including (but not limited to) attempting to gain unauthorised access, introducing malicious code,
+        scraping or harvesting data, or using the site in a way that could harm its performance or security.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">8. Changes to these terms</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        I may update these Terms of Use from time to time to reflect changes in the site or relevant laws.
+        The “Last updated” date at the top will be changed when revisions are made. Your continued use of the site after changes are posted
+        means you accept the updated terms.
+      </p>
+
+      <h3 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 mb-1">9. Contact</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-3">
+        If you have questions about these Terms of Use, please get in touch via the contact form on this website.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
